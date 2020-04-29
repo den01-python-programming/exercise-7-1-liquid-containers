@@ -6,11 +6,11 @@ The program offers the functionality to add, move and remove liquid. Using the "
 
 The commands must be defined as following:
 
-- `add amount` adds the amount of liquid specified by the parameter to the first container. The inserted amount must be specified as an integer. The container can't hold more than a hundred litres and everything added past that will go to waste.
+- `add_amount` adds the amount of liquid specified by the parameter to the first container. The inserted amount must be specified as an integer. The container can't hold more than a hundred litres and everything added past that will go to waste.
 
-- `move amount` moves the amount of liquid specified by the parameter from the first container to the second container. The given amount must be specified as an integer. If the program is requested to move more liquid than than the first container currently holds, move all the remaining liquid. The second container can't hold more than one hundred litres of liquid and everything past that will go to waste.
+- `move_amount` moves the amount of liquid specified by the parameter from the first container to the second container. The given amount must be specified as an integer. If the program is requested to move more liquid than than the first container currently holds, move all the remaining liquid. The second container can't hold more than one hundred litres of liquid and everything past that will go to waste.
 
-- `remove amount` removes the amount of liquid specified by the parameter from the second container. If the program is requested to remove more liquid than the container currently holds, remove all the remaining liquid.
+- `remove_amount` removes the amount of liquid specified by the parameter from the second container. If the program is requested to remove more liquid than the container currently holds, remove all the remaining liquid.
 
 After every command the program will print the contents of both containers. You don't have to take negative values into consideration.
 
@@ -145,3 +145,5 @@ First: 5/100
 Second: 0/100
 **quit**
 ```
+
+**NB:** There is no automatic testing for this exercise past syntax checking, so you should test your code before committing it.
